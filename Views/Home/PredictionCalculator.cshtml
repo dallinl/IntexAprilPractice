@@ -1,0 +1,57 @@
+﻿@{
+
+}
+
+@model IntexApril.Models.AccidentInfo
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+
+    <label asp-for="MILE_POINT">Mile Point </label>
+    <input asp-for="MILE_POINT" /> <br />
+
+    <label asp-for="WORK_ZONE_RELATED_True">Work Zone? </label>
+    <select asp-for="WORK_ZONE_RELATED_True">
+        <option value="1">True</option>
+        <option value="0">False</option>
+    </select> <br />
+
+    <label asp-for="SINGLE_VEHICLE_True">Single Vehicle?</label>
+    <select asp-for="SINGLE_VEHICLE_True">
+        <option value="1">True</option>
+        <option value="0">False</option>
+    </select> <br />
+
+    <label asp-for="NIGHT_DARK_CONDITION_True">Night Time? </label>
+    <select asp-for="NIGHT_DARK_CONDITION_True">
+        <option value="1">True</option>
+        <option value="0">False</option>
+    </select> <br />
+
+    <label asp-for="CITY_MURRAY">City Murray?</label>
+    <select asp-for="CITY_MURRAY">
+        <option value="1">True</option>
+        <option value="0">False</option>
+    </select> <br />
+
+    <label asp-for="COUNTY_NAME_DAVIS">County Murray? </label>
+    <select asp-for="COUNTY_NAME_DAVIS">
+        <option value="1">True</option>
+        <option value="0">False</option>
+    </select> <br />
+
+    <label asp-for="COUNTY_NAME_WEBER">County Weber? </label>
+    <select asp-for="COUNTY_NAME_WEBER">
+        <option value="1">True</option>
+        <option value="0">False</option>
+    </select> <br />
+
+    <label asp-for="MAIN_ROAD_NAME_Other">Main Road Other? </label>
+    <select asp-for="MAIN_ROAD_NAME_Other">
+        <option value="1">True</option>
+        <option value="0">False</option>
+    </select> <br />
+
+    <button type="submit">Submit</button>
+
+</form>
